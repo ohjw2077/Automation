@@ -10,7 +10,8 @@ import pyautogui
 #
 #################################부품번호 추출#################################
 
-wb = openpyxl.load_workbook(r"C:\Users\user\Documents\AutoPython\4M_CHIBOO.xlsx") #PCB_BOM 엑셀파일 경로
+address = input("파일 경로를 입력하세요.")  # BOM 엑셀파일 경로
+wb = openpyxl.load_workbook(address)
 ws = wb["Sheet1"]
 
 #Value, Name열번호 추출
